@@ -1,0 +1,8 @@
+[build]
+  publish = "public"
+  command = "composer install && php artisan config:cache && php artisan route:cache"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.php"
+  status = 200
